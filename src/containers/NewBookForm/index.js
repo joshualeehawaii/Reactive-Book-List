@@ -20,11 +20,9 @@ class NewBookForm extends Component {
     this.setState({
       bookAuthor: e.target.value
     });
-
   }
 
   handleSubmit(e){
-    console.log('***Test***');
     var newBook = {
       title: this.state.bookTitle,
       author: this.state.bookAuthor
