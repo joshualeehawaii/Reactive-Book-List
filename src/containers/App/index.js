@@ -34,6 +34,15 @@ class App extends Component {
     });
   }
 
+  addBook(book){
+    console.log('Submit Button');
+    addBookToFakeXHR(book)
+    .then(books => {
+      this.setState({books});
+      console.log(book);
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -51,7 +60,9 @@ class App extends Component {
         books={this.state.books}
         />
 
-        <NewBookForm />
+        <NewBookForm
+        addBook={this.addBook.bind(this)}
+        />
 
       </div>
     );
