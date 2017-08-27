@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import './App.css';
+//import './App.css'; <----goals
 import BookListAppTitle from '../../components/BookListAppTitle';
 import BookFilterInput from '../../components/BookFilterInput';
 import BookList from '../BookList';
@@ -35,7 +35,6 @@ class App extends Component {
   }
 
   addBook(book){
-    console.log('Submit Button');
     addBookToFakeXHR(book)
     .then(books => {
       this.setState({books});
