@@ -84,3 +84,10 @@ React exercise - extendable for Redux
 ## Part 2
 
 1. Add redux
+
+
+-'create-react-app PROJECT-NAME' <-- this is how to create a react project, this will give you the basic setup ()
+-use 'nmp start' to start the project up
+-App is the folder that will control everything
+
+
